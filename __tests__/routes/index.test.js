@@ -8,7 +8,7 @@ describe('Index Controller', () => {
       .get('/')
 
     expect(res.statusCode).toBe(200)
-    expect(res.get('Content-Type')).toMatch('text/html')
+    expect(res.type).toBe('text/html')
   })
 })
 
